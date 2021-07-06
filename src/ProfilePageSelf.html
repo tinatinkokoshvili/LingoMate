@@ -1,0 +1,89 @@
+<!DOCTYPE HTML> 
+
+<!--STYLE-->
+<style>
+    #container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+            }
+    #edit-button{
+        margin-bottom: 90px;
+        margin-right: 50px;
+              
+    }
+    #button{
+        background-color: #D9932B;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;  
+    }
+    #profile-head{
+        display: grid;
+        grid-template-columns: 100px auto ;
+        grid-template-rows: 1fr 1fr 1fr;
+            
+   }
+    #pfp{
+        grid-area: 1/1/4/2;
+        align-self: start;
+        justify-self: end;
+        
+    }
+    #item{
+        margin-top: 15px;
+        justify-self: start;
+        align-self: end;
+    }
+    #name{
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    #location{
+        font-size: x-small;
+    }
+    #likes{
+        font-size: x-small;
+    }
+</style>
+<!--END OF STYLE-->
+
+
+<html>  
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+</head>
+
+<body>
+    <div id=container>
+        <!--SECTION FOR PROFILE PIC, NAME, LOCATION and LIKES--> 
+        <div id=profile-head>
+            <div id=pfp>
+                <span class="material-icons-round" style="font-size: 72px; color: #D9932B" >
+                    account_circle
+                </span>
+            </div>
+            <div id=item >
+                <div id=name>Jane Doe</div>
+                <div id=location >
+                    <span class="material-icons-outlined"  style="font-size: 12px;"">
+                        place
+                    </span>
+                    New York, USA
+                </div>
+                <div id=likes>
+                    <span class="material-icons-outlined" style="font-size: 12px">
+                        favorite
+                        </span>
+                        23 likes
+                </div>
+            </div>
+        </div>
+        <!--EDIT PROFILE BUTTON-->
+        <div id=edit-button>
+            <button id=button>Edit Profile</button>
+        </div>
+    </div>
+</body>
+</html>
