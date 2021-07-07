@@ -6,23 +6,23 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 class App extends React.Component {
-  render() {
-    return (
-        <main className={css(styles.container)}>
-            <BrowserRouter>
-              <Switch>
-                <Route exact path="/homepage" component={Homepage} />
-              </Switch>
-            </BrowserRouter>
-        </main>
-    );
-  }
+    render() {
+        return (
+            <main className={css(styles.container)}>
+                <BrowserRouter>
+                    <Switch>
+                    <Route exact path="/" component={Homepage} />
+                    </Switch>
+                </BrowserRouter>
+            </main>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-      overflowX: 'hidden',
-  },
+    container: {
+        overflowX: 'hidden',
+    },
 });
 
 export default App;
