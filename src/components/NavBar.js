@@ -4,22 +4,24 @@ import Color from '../util/Color';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 
 
-function Body(props) {
+function Body() {
     return(
         <div class={css(styles.container)}>
             <Logo />
             <div class={css(styles.rightJustify)}>
                 <div class={css(styles.buttons)}>
-                    <a href=" ">Home</a>
+                    <a class={css(styles.buttons)} href=" ">Home</a>
                 </div>
                 <div class={css(styles.buttons)}>
-                    <a href="about">About</a>
+                    <a class={css(styles.buttons)} href="about">About</a>
                 </div>
                 <div class={css(styles.buttons)}>
-                    <a href="contact">Contact</a>
+                    <a class={css(styles.buttons)} href="contact">Contact</a>
                 </div>
                 <div class={css(styles.buttons)}>
-                    <a href="login">Log in</a>
+                    <button class={css(styles.button)} onClick={() => alert('Hello, world!')}>
+                    Login
+                    </button>
                 </div>
             </div>
         </div>
@@ -36,17 +38,38 @@ const styles = StyleSheet.create({
         height: 103,
     },
     buttons: {
-        color: Color.black,
         float: 'left',
         textAlign: 'center',
         padding: '14px 16px',
         font: '17px',
         paddingRight: 50,
     },
+    button: { // Check how fonts work...
+        background: Color.signupbutton,
+        color: 'white',
+        textAlign: 'center',
+        width: 141,
+        height: 49,
+        borderWidth: 0,
+        borderRadius: 8,
+        font: '500 18px Nunito',
+        transition: 'transform 450ms',
+        ':hover': {
+            transform: 'scale(0.97)',
+        },
+    },
+    navText: { //Comeback and try to make it align... for now useless
+        color: 'black',
+        width: 50,
+        height: 25,
+        textAlign: 'center',
+        font: '500 18px Nunito'
+    },
     rightJustify: {
         justifyContent: 'flex-end',
         display: 'flex'
     }
+
 
 });
 
