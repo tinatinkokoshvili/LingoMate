@@ -13,17 +13,15 @@
         margin-right: 50px;
               
     }
-    #edit-button{
-        background-color: #D9932B;
-        color: white;
-        border-radius: 5px;
-        font-weight: bold;  
-    }
+    
     #chat-button{
         background-color: #D9932B;
         color: white;
         border-radius: 5px;
-        font-weight: bold;  
+        font-weight: ;  
+        padding: 7px 25px 7px 25px;
+        font-size: medium;
+        border: none;
     }
     #profile-head{
         display: grid;
@@ -36,6 +34,7 @@
         align-self: start;
         justify-self: end;
         
+        
     }
     #item{
         margin-top: 15px;
@@ -45,12 +44,24 @@
     #name{
         margin-left: 5px;
         font-weight: bold;
+        font-size: x-large;
     }
     #location{
-        font-size: x-small;
+        font-size: small;
     }
     #likes{
         font-size: x-small;
+        
+    }
+    .edit-profile{
+        grid-area: 2/1/3/2;
+        margin-left: 35px;
+        margin-top: 7px;
+        font-size: x-small;
+    }
+    .edit-profile a{
+        text-decoration: underline;
+        color: black;
     }
 </style>
 <!--END OF STYLE-->
@@ -66,7 +77,7 @@
         <!--SECTION FOR PROFILE PIC, NAME, LOCATION and LIKES--> 
         <div id=profile-head>
             <div id=pfp>
-                <span class="material-icons-round" style="font-size: 72px; color: #D9932B" >
+                <span class="material-icons-round" style="font-size: 84px; color: #D9932B" >
                     account_circle
                 </span>
             </div>
@@ -79,18 +90,20 @@
                     New York, USA
                 </div>
                 <div id=likes>
-                    <span class="material-icons-outlined" style="font-size: 12px">
+                    <span class="material-icons-outlined" style="font-size: 12px; color:red" >
                         favorite
                         </span>
                         23 likes
                 </div>
             </div>
+            <div class="edit-profile">
+                <a href="">Edit Profile</a>
+            </div>
         </div>
         <!--EDIT PROFILE AND CHAT BUTTON-->
         <div id=button>
-            <button id=chat-button>Chat</button>
-            <button id=edit-button>Edit Profile</button>
-            
+            <button id=chat-button>View Messages</button>
+                      
         </div>
     </div>
 </body>
