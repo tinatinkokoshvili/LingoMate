@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         width: 141,
         height: 49,
         borderWidth: 0,
-        borderRadius: 8,
+        borderRadius: 30,
         font: '500 18px Nunito',
         transition: 'transform 450ms',
         ':hover': {
