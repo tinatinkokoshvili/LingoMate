@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Color from '../util/Color';
 import { ReactComponent as Logo } from '../assets/logo.svg';
+import { Link, useHistory } from 'react-router-dom';
 
 
 function Body() {
@@ -17,6 +18,9 @@ function Body() {
                 </div>
                 <div class={css(styles.buttons)}>
                     <a class={css(styles.buttons)} href="contact">Contact</a>
+                </div>
+                <div class={css(styles.buttons)}>
+                    <Link to="/profile" class={css(styles.buttons)} href="userprofile" className="nav-links">Profile</Link>
                 </div>
                 <div class={css(styles.buttons)}>
                     <button class={css(styles.button)} onClick={() => alert('Hello, world!')}>
