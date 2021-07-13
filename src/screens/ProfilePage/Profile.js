@@ -20,20 +20,20 @@ function Profile() {
         </head>
         <div id="profile-head">
         <div id="pfp">
-                <span class="material-icons-round" style={{fontSize: '84px', color: '#D9932B'}}>
+                <span class="material-icons-round" style={{fontSize: '144px', color: '#D9932B'}}>
                     account_circle
                 </span>
             </div>
             <div id="item" >
                 <div id="name"> Jane Doe </div>
                 <div id="location" >
-                    <span class="material-icons-outlined"  style={{fontSize: '12px'}}>
+                    <span class="material-icons-outlined"  style={{fontSize: '18px'}}>
                         place
                     </span>
                     New York, USA
                 </div>
                 <div id="likes">
-                    <span class="material-icons-outlined" style={{fontSize: '12px', color: 'red'}} >
+                    <span class="material-icons-outlined" style={{fontSize: '18px', color: 'red'}} >
                         favorite
                         </span>
                         23 likes
