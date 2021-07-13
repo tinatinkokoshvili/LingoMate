@@ -60,43 +60,140 @@
 }
 
 
-.about-me {
-    flex-direction: column;
-}
 
-.about-me-title{
-    margin-left: 50px;
-    font-family: Hermeneus One;
-    font-size: 20px;
-}
 
-.bio-container{
-    border: 3px solid #FF5678;
-    border-radius: 50px;
-    width: 450px;
-    height: 200px;
-    padding: 50px;
-    margin: 20px;
-}
+/* .aboutme-titles, .aboutme-content{
+    border: 3px solid #0f1869;
+} */
 
-.bio, .nationality, .interests {
+/* .bio-row {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+} */
+
+/* .bio, .nationality, .interests {
+    margin-top: -20px;
     display: flex;
-}
+} */
 
-.bio-title, .nationality-title, .interests-title {
+/* .bio-title, .nationality-title, .interests-title {
+     margin-right: 100px; 
     font-size: 25px;
     font-family: Hermeneus One;
-    margin-right: 30px;
+    margin-right: 50px; 
+    color: #FF5678;
+} */
+
+/* .bio-content{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 150px;
+} */
+
+/* .nationality-content{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+} */
+
+/* .interests-content{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 74px;
+} */
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 80%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  } */
+
+.languages-box, .about-me {
+    transition: transform .2s;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+main {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+.languages-box:hover, .about-me:hover{
+    transform: scale(1.04);
+}
+
+.languages-box:hover .languages-title{
     color: #FF5678;
 }
 
-.bio-description, .nationality-description, .interests-description{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 16px;
+.languages-box:hover .languages-content{
+    background-color: #fcccd5;
 }
 
+.about-me:hover .aboutme-title{
+    color: #FF5678;
+}
 
+.about-me:hover .aboutme-content{
+    background-color: #fcccd5;
+}
 
+.languages-title, .aboutme-title{
+    color: #143D59;
+    margin-left: 50px;
+    font-family: Hermeneus One;
+    font-size: 15px;
+}
 
+.languages-content, .aboutme-content {
+    border: 3px solid #FF5678;
+    border-radius: 50px;
+    width: 500px; 
+    padding: 50px;
+    margin: 20px;
+    justify-content: space-around;
+}
 
+.languages-table, .aboutme-table {
+    border-collapse: separate;
+    border-spacing: 3px 0;
+    justify-content: space-around;
+} 
+
+.speak-title, .learn-title, .bio-title, .nationality-title, .interests-title {
+    font-weight: bold;
+    color: #143D59;
+    /* color: #FF5678; */
+    /* color: #74AAFD; */
+    text-align: 'left';
+    /* padding: 10px 0; */
+    font-size: 25px;
+    font-family: Hermeneus One;
+}
+
+.lang-speak-list, .lang-learn-list, .bio-content, .nationality-content, .interests-content {
+    display: flex;
+    text-align: 'left';
+    /* padding: 20px 0; */
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.learn-lang-item, .speak-lang-item{
+    margin-left: 20px;
+}
+
+.user-data{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar';
 
 function Homepage(props){
     return(
-        <NavBar />
+        <div>Welcome to LingoMate!</div>
     );
 }
 export default Homepage;

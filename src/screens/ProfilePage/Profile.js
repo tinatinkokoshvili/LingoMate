@@ -1,12 +1,13 @@
 import React from 'react';
 import Data from '../../components/Data';
-import { user } from '../../components/UserForTesting';
+import LanguageBox from '../../components/LanguageBox';
+import { user, languagesinfo } from '../../components/UserForTesting';
 
 import '../../style/Profile.css';
 
-// import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, styled } from '@material-ui/core/styles';
 // import { styled } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 
 
 function Profile() {
@@ -47,9 +48,12 @@ function Profile() {
                       
         </div>
         </div>
-        
+
+        <div className='user-data'>
         <Data {...user} />
-      
+        <LanguageBox {...languagesinfo} />
+        </div>
+
 
       </div>
     );
