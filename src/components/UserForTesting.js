@@ -4,5 +4,7 @@ export const user = {
     interests: 'Hiking, Reading, Netflix',
   };
 
-
-  
+export const languagesinfo = {
+  speaklanguages: ['Wolof', 'English'],
+  learnlanguages: ['Mandarin', 'German'],
+};
