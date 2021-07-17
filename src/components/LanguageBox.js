@@ -36,7 +36,6 @@ function Languages({
        </div>
        </>
     );
-
 }
 
 export default Languages;

@@ -1,5 +1,5 @@
 #profile{
-    margin-left: 50px;
+    margin-left: 70px;
     margin-right: 50px;
     
 }
@@ -18,19 +18,6 @@
     margin-right: 50px;
 }
 
-/* 
-.chat-button{
-    background-color: #D9932B;
-    color: white;
-    border-radius: 5px;
-    font-weight: ;  
-    font-size: 28px;
-    padding: 7px 35px 7px 35px;
-    
-    border: none;
-}
-*/
-
   .chat-button {
     border-radius: 4px;
     /* background-color: #D9932B; */
@@ -45,8 +32,8 @@
     width: 250px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 36px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    /* margin: 30px; */
+    box-shadow: 0 10px 20px -8px rgba(230, 187, 220, 0.7);
   }
   
   .chat-button{
@@ -80,8 +67,8 @@
     display: grid;
     grid-template-columns: 100px auto ;
     grid-template-rows: 1fr 1fr 1fr;
-        
 }
+
 #pfp{
     grid-area: 1/1/4/2;
     align-self: start;
@@ -101,7 +88,6 @@
     margin-left: 5px;
     font-weight: medium;
     font-size: 35px;
-    /* margin-top: ; */
 }
 #location{
     font-size: 15;
@@ -110,60 +96,28 @@
     font-size: 15;
     
 }
-.edit-profile{
-    grid-area: 2/1/3/2;
-    margin-left: -7px;
-    margin-top: 20px;
-    font-size: 16px;
+
+.edit-profile {
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #143D59;
+    border: 3px solid #143D59;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    margin: 10px;
 }
-.edit-profile a{
-    text-decoration: underline;
-    color: black;
+
+.edit-profile:hover {
+    color: #5279a0;
+    background-color: rgb(202, 230, 240);
 }
-
-
-
-
-/* .aboutme-titles, .aboutme-content{
-    border: 3px solid #0f1869;
-} */
-
-/* .bio-row {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-} */
-
-/* .bio, .nationality, .interests {
-    margin-top: -20px;
-    display: flex;
-} */
-
-/* .bio-title, .nationality-title, .interests-title {
-     margin-right: 100px; 
-    font-size: 25px;
-    font-family: Hermeneus One;
-    margin-right: 50px; 
-    color: #FF5678;
-} */
-
-/* .bio-content{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 150px;
-} */
-
-/* .nationality-content{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 5px;
-} */
-
-/* .interests-content{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 74px;
-} */
 
 img{
     width: 40px;
@@ -173,14 +127,10 @@ img{
     padding: 5px;
 }
 
-/* img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  } */
 
 .languages-box, .about-me {
     transition: transform .2s;
     flex-direction: column;
-    margin-left: 50px;
 }
 
 main {
@@ -243,13 +193,17 @@ main {
 .lang-speak-list, .lang-learn-list, .bio-content, .nationality-content, .interests-content {
     display: flex;
     text-align: 'left';
-    /* padding: 20px 0; */
     margin-left: 20px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .learn-lang-item, .speak-lang-item{
+    /* font-size: 25px; */
+    padding: 15px;
+    border: solid #143D59;
+    border-radius: 50%;
+    border-width: 5px;
     margin-left: 20px;
 }
 
