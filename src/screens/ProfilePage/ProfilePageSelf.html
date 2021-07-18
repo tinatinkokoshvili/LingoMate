@@ -1,0 +1,110 @@
+<!DOCTYPE HTML> 
+
+<!--STYLE-->
+<style>
+    #container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+            }
+    #button{
+        margin-bottom: 90px;
+        margin-right: 50px;
+              
+    }
+    
+    #chat-button{
+        background-color: #D9932B;
+        color: white;
+        border-radius: 5px;
+        /* font-weight: ;   */
+        padding: 7px 25px 7px 25px;
+        font-size: medium;
+        border: none;
+    }
+    #profile-head{
+        display: grid;
+        grid-template-columns: 100px auto ;
+        grid-template-rows: 1fr 1fr 1fr;
+            
+   }
+    #pfp{
+        grid-area: 1/1/4/2;
+        align-self: start;
+        justify-self: end;
+        
+        
+    }
+    #item{
+        margin-top: 15px;
+        justify-self: start;
+        align-self: end;
+    }
+    #name{
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    #location{
+        font-size: small;
+    }
+    #likes{
+        font-size: x-small;
+        
+    }
+    .edit-profile{
+        grid-area: 2/1/3/2;
+        margin-left: 35px;
+        margin-top: 7px;
+        font-size: x-small;
+    }
+    .edit-profile a{
+        text-decoration: underline;
+        color: black;
+    }
+</style>
+<!--END OF STYLE-->
+
+
+<html>  
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+</head>
+
+<body>
+    <div id=container>
+        <!--SECTION FOR PROFILE PIC, NAME, LOCATION and LIKES--> 
+        <div id=profile-head>
+            <div id=pfp>
+                <span class="material-icons-round" style="font-size: 84px; color: #D9932B" >
+                    account_circle
+                </span>
+            </div>
+            <div id=item >
+                <div id=name>Jane Doe</div>
+                <div id=location >
+                    <span class="material-icons-outlined"  style="font-size: 12px;"">
+                        place
+                    </span>
+                    New York, USA
+                </div>
+                <div id=likes>
+                    <span class="material-icons-outlined" style="font-size: 12px; color:red" >
+                        favorite
+                        </span>
+                        23 likes
+                </div>
+            </div>
+            <div class="edit-profile">
+                <a href="">Edit Profile</a>
+            </div>
+        </div>
+        <!--EDIT PROFILE AND CHAT BUTTON-->
+        <div id=button>
+            <button id=chat-button>View Messages</button>
+                      
+        </div>
+    </div>
+</body>
+</html>
