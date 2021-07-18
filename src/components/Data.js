@@ -24,7 +24,6 @@ function Bio({
 
     return (
       <>
-
         <div className='about-me'>
        <div className="aboutme-title">
             <h1>About Me</h1>

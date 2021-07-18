@@ -48,8 +48,8 @@ function Profile() {
             </div>
 
                 <div className='user-data'>
-                <Data {...user} />
-                <LanguageBox {...languagesinfo} />
+                    <Data {...user} />
+                    <LanguageBox {...languagesinfo} />
                 </div>
 
         </div>
