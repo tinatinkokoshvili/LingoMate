@@ -201,9 +201,9 @@ main {
 .learn-lang-item, .speak-lang-item{
     /* font-size: 25px; */
     padding: 15px;
-    border: solid #143D59;
-    border-radius: 50%;
-    border-width: 5px;
+    /* border: solid #143D59; */
+    /* border-radius: 50%; */
+    /* border-width: 5px; */
     margin-left: 20px;
 }
 

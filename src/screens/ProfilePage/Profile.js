@@ -53,10 +53,6 @@ function Profile() {
                 </div>
 
         </div>
-
-
-
-    
     );
   }
   
