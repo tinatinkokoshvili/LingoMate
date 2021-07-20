@@ -38,7 +38,7 @@ function Profile() {
                         </div>
                     </div>
                         <div className="edit-profile-button">
-                            <button className='edit-profile'>Edit Profile</button>
+                            <Link to='/form' className='edit-profile'>Edit Profile</Link>
                         </div>
                     </div>
                     <div className='view-messages'>
