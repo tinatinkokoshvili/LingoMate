@@ -15,12 +15,15 @@ const initialFValues = {
     id: 0,
     fullName: '',
     email: '',
-    mobile: '',
+    birthDate: new Date(),
+    country: '',
     city: '',
     gender: 'male',
-    departmentId: '',
-    hireDate: new Date(),
-    isPermanent: false,
+    bio: '',
+    nationality: '',
+    interests: '',
+    langSpeak: [],
+    langLearn: [],
 }
 
 
@@ -49,10 +52,24 @@ export default function UForm() {
                 value={values.email}
                 onChange={handleInputChange}
             />
+            <Controls.RadioGroup 
+                name="gender"
+                label="gender"
+                value={values.gender}
+                onChange={handleInputChange}
+                items={genderItems}
+            />
+            <Controls.DatePicker
+                name="birthDate"
+                label="Birth Date"
+                value={values.birthDate}
+                onChange={handleInputChange}
+            />
+            <div style={{margin: '7px', color: '#38363b'}}>Location</div>
             <Controls.Input
-                name="mobile"
-                label="Mobile"
-                value={values.mobile}
+                name="country"
+                label="Country"
+                value={values.country}
                 onChange={handleInputChange}
             />
             <Controls.Input
@@ -61,46 +78,59 @@ export default function UForm() {
                 value={values.city}
                 onChange={handleInputChange}
             />
-            </Grid>
-            <Grid items xs={6}>
-                <Controls.RadioGroup 
-                    name="gender"
-                    label="gender"
-                    value={values.gender}
-                    onChange={handleInputChange}
-                    items={genderItems}
+        </Grid>
+        <Grid items xs={6}>
+            <Controls.Input
+                name="bio"
+                label="Bio"
+                value={values.bio}
+                onChange={handleInputChange}
+            />
+            <Controls.Select 
+                name="nationality"
+                label="Natinoality"
+                value={values.nationality}
+                onChange={handleInputChange}
+                options={employeeService.getDeaprtmentCollection()}
+            />
+            <Controls.Input
+                name="interests"
+                label="Interests"
+                value={values.interests}
+                onChange={handleInputChange}
+            />
+            <Controls.MultiSelect 
+                name="langSpeak"
+                label="Languages Spoken"
+                value={values.langSpeak}
+                onChange={handleInputChange}
+                options={employeeService.getDeaprtmentCollection()}
+            />
+            <Controls.MultiSelect 
+                name="langLearn"
+                label="Languages to Learn"
+                value={values.LangLearn}
+                onChange={handleInputChange}
+                options={employeeService.getDeaprtmentCollection()}
+            />
+            {/* <Controls.Checkbox
+                name="isPermanent"
+                label="Permanent Employee"
+                value={values.isPermanent}
+                onChange={handleInputChange}
+            /> */}
+            <div>
+                <Controls.Button
+                    type="submit"
+                    text="Submit"
                 />
-                <Controls.Select 
-                    name="departmentId"
-                    label="Department"
-                    value={values.departmentId}
-                    onChange={handleInputChange}
-                    options={employeeService.getDeaprtmentCollection()}
+                <Controls.Button
+                    type="reset"
+                    text="Reset"
+                    color="default"
                 />
-                <Controls.DatePicker
-                    name="hireDate"
-                    label="Hire Date"
-                    value={values.hireDate}
-                    onChange={handleInputChange}
-                />
-                <Controls.Checkbox
-                    name="isPermanent"
-                    label="Permanent Employee"
-                    value={values.isPermanent}
-                    onChange={handleInputChange}
-                />
-                <div>
-                    <Controls.Button
-                        type="submit"
-                        text="Submit"
-                    />
-                    <Controls.Button
-                        type="reset"
-                        text="Reset"
-                        color="default"
-                    />
-                </div>
-            </Grid>
+            </div>
+        </Grid>
         </Grid>
         </InnerForm>
     )

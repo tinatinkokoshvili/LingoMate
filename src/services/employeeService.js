@@ -1,10 +1,11 @@
 
 
 export const getDeaprtmentCollection = () => ([
-    {id: '1', title: 'Development' },
-    {id: '2', title: 'Marketing' },
-    {id: '3', title: 'Accounting' },
-    {id: '4', title: 'HR' },
+    {id: '1', title: 'Australia' },
+    {id: '2', title: 'Belgium' },
+    {id: '3', title: 'Canada' },
+    {id: '4', title: 'Denmark' },
+    {id: '4', title: 'Estonia' },
 ])
 
 

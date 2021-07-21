@@ -11,12 +11,12 @@ const useStyles = makeStyles(theme =>({
 }))
 
 
-export default function Users() {
+export default function Form() {
     const classes = useStyles();
 
     return (
         <Paper className={classes.pageContent}>
-            <UForm/>
+            <UForm />
         </Paper>
     
     )
