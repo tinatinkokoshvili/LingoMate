@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, } from '@material-ui/core';
 import Controls from '../../components/controls/Controls';
 import {useForm, InnerForm} from '../../components/useForm';
-import * as employeeService from  "../../services/employeeService";
+import * as employeeService from  "../../services/Countries";
 
 const genderItems = [
     { id: 'male', title: 'Male' },
@@ -91,7 +91,7 @@ export default function UForm() {
                 label="Natinoality"
                 value={values.nationality}
                 onChange={handleInputChange}
-                options={employeeService.getDeaprtmentCollection()}
+                options={employeeService.getCountriesCollection()}
             />
             <Controls.Input
                 name="interests"
@@ -104,14 +104,14 @@ export default function UForm() {
                 label="Languages Spoken"
                 value={values.langSpeak}
                 onChange={handleInputChange}
-                options={employeeService.getDeaprtmentCollection()}
+                options={employeeService.getCountriesCollection()}
             />
             <Controls.MultiSelect 
                 name="langLearn"
                 label="Languages to Learn"
                 value={values.LangLearn}
                 onChange={handleInputChange}
-                options={employeeService.getDeaprtmentCollection()}
+                options={employeeService.getCountriesCollection()}
             />
             {/* <Controls.Checkbox
                 name="isPermanent"

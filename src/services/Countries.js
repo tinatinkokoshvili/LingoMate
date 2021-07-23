@@ -1,6 +1,6 @@
 
 
-export const getDeaprtmentCollection = () => ([
+export const getCountriesCollection = () => ([
     {id: '1', title: 'Australia' },
     {id: '2', title: 'Belgium' },
     {id: '3', title: 'Canada' },
