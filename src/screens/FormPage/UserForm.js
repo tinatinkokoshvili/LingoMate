@@ -114,9 +114,9 @@ export default function UForm() {
                 options={employeeService.getCountriesCollection()}
             />
             {/* <Controls.Checkbox
-                name="isPermanent"
-                label="Permanent Employee"
-                value={values.isPermanent}
+                name="is"
+                label="Permanent"
+                value={values.is}
                 onChange={handleInputChange}
             /> */}
             <div>
