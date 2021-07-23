@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FormControl, InputLabel, MenuItem, Select as MuiSelect } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { makeStyles } from '@material-ui/core/styles';
