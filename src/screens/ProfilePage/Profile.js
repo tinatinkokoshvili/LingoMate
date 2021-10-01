@@ -38,7 +38,7 @@ function Profile() {
                         </div>
                     </div>
                         <div className="edit-profile-button">
-                            <button className='edit-profile'>Edit Profile</button>
+                            <Link to='/form' className='edit-profile'>Edit Profile</Link>
                         </div>
                     </div>
                     <div className='view-messages'>
@@ -48,8 +48,8 @@ function Profile() {
             </div>
 
                 <div className='user-data'>
-                <Data {...user} />
-                <LanguageBox {...languagesinfo} />
+                    <Data {...user} />
+                    <LanguageBox {...languagesinfo} />
                 </div>
 
         </div>
